@@ -1,2 +1,0 @@
-# coin-webapp
-coin-webapp
