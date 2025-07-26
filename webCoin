@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coin Counter</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 100px; }
+    #coin-count { font-size: 24px; margin-top: 20px; }
+    button { font-size: 20px; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <h1>🪙 Coin Hisoblagich</h1>
+  <button onclick="addCoin()">+1 Coin</button>
+  <div id="coin-count">Sizda 0 ta coin bor</div>
+
+  <script>
+    let coins = 0;
+    function addCoin() {
+      coins++;
+      document.getElementById("coin-count").innerText = `Sizda ${coins} ta coin bor`;
+    }
+  </script>
+</body>
+</html>
